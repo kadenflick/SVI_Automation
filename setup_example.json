@@ -1,0 +1,35 @@
+{
+  "set_name": "SET_NAME",
+
+  "absolute_source_path": "C:\\path\\file.csv",
+  "absolute_svi_path": "C:\\path",
+
+  "join_field": "JOIN_FIELD",
+  "join_shapefile_path": "C:\\path\\file.shp",
+
+  "geoid_fields": ["GEOID_FIElD"],
+
+  "subsets": {
+    "SUBSET1_NAME": ["THEME1", "THEME2"],
+    "SUBSET2_NAME": "ALL"
+  },
+
+  "spatial_subsets": ["SUBSET2_NAME"],
+
+  "themes": {
+    "THEME1": {
+      "non_percentage_fields": ["FIELD1"],
+      "inverse_fields": ["FIELD2"],
+
+      "estimated_totals": {
+        "FIELD1": ["SOURCE_FIELD_1", "SOURCE_FIELD_2"],
+        "FIELD2": ["SOURCE_FIELD_1", "SOURCE_FIELD_2"]
+      },
+
+      "estimated_percentages": {
+        "FIELD1": "TOTAL_FIELD",
+        "FIELD2": "TOTAL_FIELD"
+      }
+    }
+  }
+}
